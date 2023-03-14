@@ -33,14 +33,11 @@ app.use(`${api}/orders`, ordersRoutes);
 
 //Database
 mongoose
-  .connect(
-    "mongodb+srv://anand:anand123@cluster0.dpgmlsk.mongodb.net/?retryWrites=true&w=majority",
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      dbName: "mean-eshop",
-    }
-  )
+  .connect(process.env.CONNECTION_STRING, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    dbName: "mean-eshop",
+  })
   .then(() => {
     console.log("Database Connection is ready...");
   })
