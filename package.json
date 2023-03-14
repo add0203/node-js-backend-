@@ -21,5 +21,13 @@
     "morgan": "^1.10.0",
     "multer": "^1.4.2",
     "nodemon": "^2.0.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/add0203/diploy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/add0203/diploy/issues"
+  },
+  "homepage": "https://github.com/add0203/diploy#readme"
 }
